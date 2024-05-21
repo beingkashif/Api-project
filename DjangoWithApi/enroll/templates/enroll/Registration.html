@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        button {
+            background-color: purple
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="" method="POST" novalidate>
+        <h1>Student Registration Form</h1>
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    
+</body>
+</html>
